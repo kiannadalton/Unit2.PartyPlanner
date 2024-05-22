@@ -109,9 +109,9 @@ const renderAllEvents = () => {
             <p>${event.description}</p>
             <p>${event.date}</p>
             <p>${event.location}</p>
-            <button class="delete-button" data-id="${events.id}">Remove</button>
+            <button class="delete-button" data-id="${event.id}">Remove</button>
         `;
-    eventsContainer.appendChild(recipeElement);
+    eventsContainer.appendChild(eventsElement);
 
     const deleteButton = eventsElement.querySelector(".delete-button");
     //add event listener to the delete button so we can delete a event
