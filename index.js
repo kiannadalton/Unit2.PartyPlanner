@@ -115,9 +115,9 @@ const renderAllEvents = () => {
 
     const deleteButton = eventsElement.querySelector(".delete-button");
     //add event listener to the delete button so we can delete a event
-    deleteButton.addEventListener("click", (event) => {
+    deleteButton.addEventListener("click", (eventDelete) => {
       try {
-        event.preventDefault();
+        eventDelete.preventDefault();
         removeEvent(event.id);
       } catch (error) {
         console.log(error);
